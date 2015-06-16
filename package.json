@@ -1,0 +1,26 @@
+{
+  "name": "monokai-blackboard",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A monokai-blackboard hybrid theme for Atom. Forked from kevinsawicki/monokai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dexteryy/monokai-blackboard"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.39.0"
+  },
+  "keywords": [
+    "syntax",
+    "dark",
+    "monokai",
+    "blackboard"
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/dexteryy/monokai-blackboard/issues"
+  },
+  "homepage": "https://github.com/dexteryy/monokai-blackboard"
+}
