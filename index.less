@@ -227,12 +227,16 @@ atom-text-editor, :host {
   color: #FD971F;
 }
 
+.keyword.control.flow {
+  color: #FD971F;
+}
+
 .entity.other.attribute-name {
   color: #FD971F;
 }
 
 .string.unquoted.label.js {
-  color: #FD971F;
+  color: #ff6600;
 }
 
 .meta.structure.dictionary.json:not(.value) > .string.quoted.double.json,
@@ -333,6 +337,11 @@ atom-text-editor, :host {
   font-style: normal;
   color: #ffffff;
   text-decoration: underline;
+  
+  .keyword {
+    color: #ffffff;
+  }
+  
 }
 
 .keyword.operator.bracket,
