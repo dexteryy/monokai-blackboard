@@ -1,7 +1,7 @@
 @import 'syntax-variables';
 
 atom-text-editor::shadow {
-  
+
   .find-result .region {
     background-color: transparent;
     border-radius: 2px;
@@ -15,7 +15,7 @@ atom-text-editor::shadow {
     box-sizing: border-box;
     border:2px solid @syntax-result-marker-color-selected;
   }
-  
+
 }
 
 atom-text-editor, :host {
@@ -33,7 +33,7 @@ atom-text-editor, :host {
   .indent-guide:first-child {
     color:transparent;
   }
-  
+
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
@@ -41,11 +41,11 @@ atom-text-editor, :host {
   .invisible {
     color: @syntax-text-color;
   }
-  
+
   .cursor {
     border-color: @syntax-cursor-color;
   }
-  
+
   .bracket-matcher .region {
     border-bottom: 3px solid #0066ff;
   }
@@ -55,7 +55,7 @@ atom-text-editor, :host {
   }
 
   // ===================
-  
+
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
@@ -97,7 +97,7 @@ atom-text-editor, :host {
   }
 
   // ===================
-  
+
   .gfm {
     .markup {
       &.heading {
@@ -139,7 +139,7 @@ atom-text-editor, :host {
   }
 
   // ===================
-  
+
 }
 
 .comment {
@@ -158,11 +158,11 @@ atom-text-editor, :host {
 
 .regexp {
   color: #99ff99;
-  
+
   .string {
     color: #99ff99;
   }
-  
+
 }
 
 // ===================
@@ -297,7 +297,7 @@ atom-text-editor, :host {
 
 // ===================
 
-.meta .braces, 
+.meta .braces,
 .meta .brace {
   color:#ccc;
 }
@@ -354,7 +354,18 @@ atom-text-editor, :host {
 
 // ===================
 
-autocomplete-suggestion-list .word {
-  color: #999;
+autocomplete-suggestion-list {
+
+  .word {
+    color: #999;
+  }
+
+  // .select-list.popover-list {
+  //
+  // }
+  //
+  // .select-list ol.list-group li.selected {
+  //
+  // }
+
 }
-  
