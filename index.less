@@ -186,6 +186,11 @@ atom-text-editor, :host {
   color: #E6DB74;
 }
 
+.variable.less,
+.variable.scss {
+  color: #ffcc00;
+}
+
 // ===================
 
 .storage.type {
@@ -193,7 +198,7 @@ atom-text-editor, :host {
   color: #66D9EF;
 }
 
-.keyword.control {
+.keyword.control.js {
   color: #66D9EF;
 }
 
@@ -274,7 +279,18 @@ atom-text-editor, :host {
   color: #F92672;
 }
 
-.entity.name.tag {
+.entity.name.tag,
+.keyword.control.elements {
+  color: #F92672;
+  text-decoration: underline;
+}
+
+.entity.name.tag.custom,
+.keyword.control.elements.custom {
+  text-decoration: none;
+}
+
+.keyword.control.at-rule {
   color: #F92672;
 }
 
@@ -317,11 +333,6 @@ atom-text-editor, :host {
   font-style: normal;
   color: #ffffff;
   text-decoration: underline;
-}
-
-.variable.less,
-.variable.scss {
-  color: #fff;
 }
 
 .keyword.operator.bracket,
