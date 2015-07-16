@@ -167,17 +167,6 @@ atom-text-editor, :host {
 
 // ===================
 
-.entity.name.class {
-  text-decoration: none;
-  color: #E6DB74;
-}
-
-.entity.other.inherited-class {
-  font-style: italic;
-  text-decoration: none;
-  color: #E6DB74;
-}
-
 .support.function.decl {
   color: #E6DB74;
 }
@@ -199,6 +188,17 @@ atom-text-editor, :host {
     color: #ffcc00;
   }
   
+}
+
+.entity.name.class,
+.entity.other.inherited-class,
+.entity.name.accessor {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
 }
 
 // ===================
@@ -226,6 +226,19 @@ atom-text-editor, :host {
   font-style: normal;
 }
 
+.meta.function.arrow.js {
+  color: #66D9EF;
+  
+  .storage.type {
+    font-style: normal;
+  }
+  
+  .separator {
+    color: #fff;
+  }
+  
+}
+
 // ===================
 
 .variable.parameter {
@@ -247,6 +260,14 @@ atom-text-editor, :host {
 
 .string.unquoted.label.js {
   color: #ff6600;
+}
+
+.object.key.js {
+  
+  .string {
+    color: #ff6600;
+  }
+  
 }
 
 .meta.structure.dictionary.json:not(.value) > .string.quoted.double.json,
