@@ -191,6 +191,16 @@ atom-text-editor, :host {
   color: #ffcc00;
 }
 
+.meta.function,
+.meta.method {
+  
+  .entity.name.method,
+  .entity.name.function {
+    color: #ffcc00;
+  }
+  
+}
+
 // ===================
 
 .storage.type {
@@ -322,7 +332,8 @@ atom-text-editor, :host {
   color:#ccc;
 }
 
-.entity.name.function {
+.entity.name.function,
+.meta.function-call .entity.name.function {
   color: #ffffff;
   font-style: normal;
 }
