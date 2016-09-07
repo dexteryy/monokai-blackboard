@@ -1,4 +1,4 @@
-@import 'syntax-variables';
+@import 'styles/syntax-variables';
 
 atom-text-editor::shadow {
 
@@ -32,6 +32,20 @@ atom-text-editor, :host {
 
   .indent-guide:first-child {
     color:transparent;
+  }
+
+  .indent-guide-improved {
+    background-color: @syntax-indent-guide-color;
+
+    &.indent-guide-stack {
+      background-color: @syntax-indent-guide-color;
+
+      &.indent-guide-active {
+        background-color: rgba(255, 72, 0, .70);
+      }
+
+    }
+
   }
 
   .wrap-guide {
@@ -182,12 +196,12 @@ atom-text-editor, :host {
 
 .meta.function,
 .meta.method {
-  
+
   .entity.name.method,
   .entity.name.function {
     color: #ffcc00;
   }
-  
+
 }
 
 .entity.name.class,
@@ -212,6 +226,10 @@ atom-text-editor, :host {
   color: #66D9EF;
 }
 
+.keyword.control.flow {
+  color: #66D9EF;
+}
+
 .entity.name.instance {
   color: #66D9EF;
 }
@@ -228,15 +246,11 @@ atom-text-editor, :host {
 
 .meta.function.arrow.js {
   color: #66D9EF;
-  
+
   .storage.type {
     font-style: normal;
   }
-  
-  .separator {
-    color: #fff;
-  }
-  
+
 }
 
 // ===================
@@ -246,16 +260,16 @@ atom-text-editor, :host {
   color: #FD971F;
 }
 
-.meta.function .punctuation.definition.parameters {
-  color: #FD971F;
-}
-
-.keyword.control.flow {
-  color: #FD971F;
-}
+// .meta.function .punctuation.definition.parameters {
+//   color: #FD971F;
+// }
 
 .entity.other.attribute-name {
   color: #FD971F;
+}
+
+.entity.other.attribute-name.jsx {
+  color: #ff6600;
 }
 
 .string.unquoted.label.js {
@@ -263,11 +277,11 @@ atom-text-editor, :host {
 }
 
 .object.key.js {
-  
+
   .string {
     color: #ff6600;
   }
-  
+
 }
 
 .meta.structure.dictionary.json:not(.value) > .string.quoted.double.json,
@@ -278,6 +292,15 @@ atom-text-editor, :host {
 .entity.other.pseudo-class {
   color: #ff6600;
 }
+
+.entity.name.function {
+  color: #FD971F;
+  font-style: normal;
+}
+.meta.function-call .entity.name.function {
+  font-style: normal;
+}
+
 
 // ===================
 
@@ -301,6 +324,26 @@ atom-text-editor, :host {
 }
 
 .support.constant.property-value {
+  color: #AE81FF;
+}
+
+.variable.language.this {
+  color: #AE81FF;
+}
+
+.support.class,
+.support.type {
+  font-style: normal;
+  color: #AE81FF;
+  text-decoration: underline;
+
+  .keyword {
+    color: #AE81FF;
+  }
+
+}
+
+.entity.name.tag.jsx {
   color: #AE81FF;
 }
 
@@ -329,11 +372,6 @@ atom-text-editor, :host {
   color: #F92672;
 }
 
-// 'this' Javascript
-.variable.language.js {
-  color: #F92672;
-}
-
 .punctuation.terminator.statement.js {
   color: #F92672;
 }
@@ -350,30 +388,12 @@ atom-text-editor, :host {
 
 .meta .braces,
 .meta .brace {
-  color:#ccc;
-}
-
-.entity.name.function,
-.meta.function-call .entity.name.function {
-  color: #ffffff;
-  font-style: normal;
+  color: #FFFFFF;
 }
 
 .support.function {
   color: #ffffff;
   text-decoration: underline;
-}
-
-.support.class,
-.support.type {
-  font-style: normal;
-  color: #ffffff;
-  text-decoration: underline;
-  
-  .keyword {
-    color: #ffffff;
-  }
-  
 }
 
 .keyword.operator.bracket,
@@ -390,6 +410,16 @@ atom-text-editor, :host {
 .invalid.deprecated {
   color: #F8F8F0;
   background-color: #AE81FF;
+}
+
+.meta.function.arrow.js {
+
+  .parameters,
+  .separator,
+  .variable {
+    color: #ffffff;
+  }
+
 }
 
 // ===================
